@@ -107,7 +107,7 @@ namespace SmartlookUnity
             {
                 string internalDirection = "start";
 
-                if (direction.Equals(NavigationEventType.exit))
+                if (((NavigationEventType)direction).Equals(NavigationEventType.exit))
                 {
                     internalDirection = "stop";
                 }
@@ -235,7 +235,7 @@ namespace SmartlookUnity
             {
                 string internalRenderingMode = "native";
 
-                if (renderingMode.Equals(RenderingModeType.no_rendering))
+                if (((RenderingModeType)renderingMode).Equals(RenderingModeType.no_rendering))
                 {
                     internalRenderingMode = "no_rendering";
                 }
